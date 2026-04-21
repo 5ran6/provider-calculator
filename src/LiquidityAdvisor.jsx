@@ -1,6 +1,7 @@
-import React, { useState, useMemo } from "react";
-import { TrendingUp, AlertTriangle, CheckCircle2, Target, Zap, ArrowUpRight, Calculator } from "lucide-react";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, Area, AreaChart } from "recharts";
+/* eslint-disable react/prop-types, react-hooks/exhaustive-deps */
+import { useState, useMemo } from "react";
+import { AlertTriangle, CheckCircle2, Target, Zap, Calculator } from "lucide-react";
+import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, Area, AreaChart } from "recharts";
 
 export default function LiquidityAdvisor() {
   const [margin, setMargin] = useState(20);
@@ -97,7 +98,6 @@ export default function LiquidityAdvisor() {
 
   return (
     <div className="min-h-screen bg-stone-50 text-stone-900" style={{ fontFamily: "'Instrument Serif', 'Georgia', serif" }}>
-      <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       <style>{`
         .mono { font-family: 'JetBrains Mono', monospace; font-feature-settings: 'tnum'; }
         .sans { font-family: 'Inter', sans-serif; }

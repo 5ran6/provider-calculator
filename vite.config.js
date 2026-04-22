@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 8000,
-    host: true
+    host: true,
+    allowedHosts: ['golden-jemima-francis-ocholi-9e5c0953.koyeb.app']
   }
 })
